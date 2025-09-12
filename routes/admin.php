@@ -37,6 +37,7 @@ Route::name('admin.')->group(function () {
         Route::get('role', [DashboardController::class, 'role'])->name('user');
         Route::get('user', [DashboardController::class, 'adminUser'])->name('user');
         Route::get('permissions', [DashboardController::class, 'user'])->name('user');
+
         Route::post('logout', [AuthController::class, 'logout'])->name('logout');
     });
 });
