@@ -186,18 +186,7 @@
     <!--TABLES -->
     <!--DataTables-->
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/datatables.net-bs4@1.10.19/js/dataTables.bootstrap4.min.js"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"
-        crossorigin="anonymous"></script>
-
-    <!--Bootstrap Tables-->
-    <script src="{{ asset('admin_assets/js/vendors/tables.js')}}"></script>
-
-    <!--Tables Init-->
-    <script src="{{ asset('admin_assets/js/scripts-init/tables.js')}}"></script>
+    @stack('scripts')
 
 </body>
 
